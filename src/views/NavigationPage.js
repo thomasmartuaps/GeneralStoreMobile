@@ -11,6 +11,7 @@ export default function NavigationPage () {
         <Stack.Screen name="Login"></Stack.Screen>
         <Stack.Screen name="StorePage"></Stack.Screen>
         <Stack.Screen name="ProfilePage"></Stack.Screen>
+        <Stack.Screen name="CheckoutPage"></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
