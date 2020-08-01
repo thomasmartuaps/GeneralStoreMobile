@@ -4,8 +4,9 @@ import styles from './styles'
 
 export default function LandingPage () {
   return (
-    <View style={styles.container}>
-      <Text>Start mate</Text>
+    <View style={styles.greenBackground}>
+      <Text style={{color: '#FFFFFF', fontSize: 36}}>Purchase. Consume. Join Us.</Text>
     </View>
   )
 }
+
