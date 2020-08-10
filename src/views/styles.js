@@ -1,6 +1,16 @@
 import { StyleSheet } from 'react-native'
 
-const styles = StyleSheet.create({
+export const parentStyles = {
+  buttonLandingPage: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 172, 
+    height: 48,
+    borderRadius: 200,
+  }
+}
+
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
@@ -17,13 +27,7 @@ const styles = StyleSheet.create({
     maxWidth: '100%',
     padding: 15
   },
-  buttonLandingPage: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 172, 
-    height: 48,
-    borderRadius: 200,
+  orangeButton: {
+
   }
 })
-
-export default styles

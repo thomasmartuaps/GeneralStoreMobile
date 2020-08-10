@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, Button } from 'react-native'
-import styles from './styles'
+import { styles, parentStyles } from './styles'
 
 export default function LandingPage () {
   return (
@@ -31,11 +31,11 @@ export default function LandingPage () {
       </View>
       <View style={{
         backgroundColor: '#716249',
-        ...styles.buttonLandingPage
+        ...parentStyles.buttonLandingPage
       }}>
         <TouchableOpacity style={{
           backgroundColor: '#FD5523', 
-          ...styles.buttonLandingPage
+          ...parentStyles.buttonLandingPage
           }}>
           <Text style={{
             color: '#FFFBE6',
