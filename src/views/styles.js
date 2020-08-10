@@ -14,7 +14,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
     backgroundColor: '#356859',
-    maxWidth: '100%'
+    maxWidth: '100%',
+    padding: 15
+  },
+  buttonLandingPage: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 172, 
+    height: 48,
+    borderRadius: 200,
   }
 })
 
