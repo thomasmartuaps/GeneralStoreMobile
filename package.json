@@ -8,7 +8,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/comfortaa": "^0.1.0",
     "@expo-google-fonts/dev": "^0.1.0",
+    "@expo-google-fonts/roboto": "^0.1.0",
     "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/native": "^5.6.1",
     "@react-navigation/stack": "^5.6.2",

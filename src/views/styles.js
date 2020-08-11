@@ -7,6 +7,11 @@ export const parentStyles = {
     width: 172, 
     height: 48,
     borderRadius: 200,
+    margin: 6
+  },
+  generalText: {
+    fontSize: 14,
+    fontStyle: 'Roboto_400Regular'
   }
 }
 
@@ -18,14 +23,29 @@ export const styles = StyleSheet.create({
     backgroundColor: '#356859',
     maxWidth: '100%'
   },
-  greenBackground: {
+  landingPageBackground: {
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-end',
     backgroundColor: '#356859',
     maxWidth: '100%',
-    padding: 15
+    padding: 24
+  },
+  mainBackground: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    backgroundColor: '#FFFFFF',
+    padding: 0
+  },
+  bottomBar: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: '#FFFBE6',
+    justifyContent: 'center',
+    width: width
   },
   orangeButton: {
 
