@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, Dimensions, TouchableOpacity } from 'react-native'
 import { styles, parentStyles } from '../styles'
 import {
@@ -9,36 +9,44 @@ import {
 
 export default function BottomBar () {
   const width = Dimensions.get('window').width
-  let storeActive = false
-  let cartActive = false
-  let profileActive = false
+  let [ store, setStore ] = useState(false)
+  let [ cart, setCart ] = useState(false)
+  let [ profile, setProfile ] = useState(false)
 
-  const setStore = () => {
-    storeActive = true
-    cartActive = false
-    profileActive = false
+  const switchStore = () => {
+    setStore = true
+    setCart = false
+    setProfile = false
     console.log('setStore pressed')
-    console.log(storeActive)
+    console.log('store is now', store)
+  }
+
+  const switchCart = () => {
+    setStore = false
+    setCart = true
+    setProfile = false
+    console.log('setCart pressed')
+    console.log('store is now', store)
   }
 
   return (
     <View style={styles.bottomBar}>
       {
-        storeActive ?
+        store ?
         <View>
           <Text style={{
             color: '#356859',
             ...parentStyles.generalText}}>Store Active</Text>
         </View>
         :
-        <TouchableOpacity onPress={setStore}>
+        <View onPress={switchStore}>
           <Text style={{
             color: '#000000',
             opacity: 0.5,
             ...parentStyles.generalText}}>Store</Text>
-        </TouchableOpacity>
+        </View>
       }
-      <TouchableOpacity>
+      <TouchableOpacity onPress={switchCart}>
         <Text style={{
           color: '#000000',
           opacity: 0.5,
