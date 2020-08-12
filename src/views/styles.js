@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: '#FFFBE6',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     width: width
   },
   orangeButton: {
