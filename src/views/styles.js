@@ -40,13 +40,18 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     backgroundColor: '#FFFFFF',
-    padding: 0
+    padding: 128
   },
   bottomBar: {
+    position: 'fixed',
+    bottom: 0,
     flex: 1,
     flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: '#FFFBE6',
     justifyContent: 'space-evenly',
+    height: 56,
+    maxHeight: 56,
     width: width
   },
   orangeButton: {
