@@ -13,8 +13,8 @@ export default function LandingPage ({ navigation }) {
     Comfortaa_400Regular,
     Roboto_400Regular
   })
-  const goToStore = () => {
-    navigation.navigate('StorePage')
+  const goToMain = () => {
+    navigation.navigate('MainPage')
   }
   const goToLogin =  () => {
     navigation.navigate('Login')
@@ -58,7 +58,7 @@ export default function LandingPage ({ navigation }) {
           }}>Register</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity onPress={goToStore}>
+      <TouchableOpacity onPress={goToMain}>
         <Text  
         style={{
           color: '#FFFBE6', 
