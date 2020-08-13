@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { View, Text, Dimensions, TouchableOpacity } from 'react-native'
 import { styles, parentStyles } from '../styles'
+import Store from '@material-ui/icons/Store'
+import ShoppingCart from '@material-ui/icons/ShoppingCart'
 import {
   useFonts,
   Comfortaa_400Regular,
@@ -12,6 +14,11 @@ export default function BottomBar () {
   let [ store, setStore ] = useState(false)
   let [ cart, setCart ] = useState(false)
   let [ profile, setProfile ] = useState(false)
+
+  let [fontsLoaded] = useFonts({
+    Comfortaa_400Regular,
+    Roboto_400Regular
+  })
 
   const switchStore = () => {
     setStore(true)
@@ -33,26 +40,39 @@ export default function BottomBar () {
     <View style={styles.bottomBar}>
       {
         store ?
-        ( <View>
-          <Text style={{
-            color: '#356859',
-            ...parentStyles.generalText}}>Store</Text>
-        </View> )
+        ( <View style={styles.barButton}>
+            <Store style={{color: '#356859'}}></Store>
+            <Text style={{
+              color: '#356859',
+              ...parentStyles.generalText}}>Store</Text>
+          </View> )
         :
-        ( <TouchableOpacity onPress={switchStore}>
+        ( <TouchableOpacity style={styles.barButton} onPress={switchStore}>
+            <Store style={{color: '#000000', opacity: 0.5}}></Store>
+            <Text style={{
+              color: '#000000',
+              opacity: 0.5,
+              ...parentStyles.generalText}}>Store</Text>
+          </TouchableOpacity> )
+      }
+      {
+        cart ?
+        <View style={styles.barButton}>
+            <ShoppingCart style={{color: '#356859'}}></ShoppingCart>
+            <Text style={{
+              color: '#356859',
+              ...parentStyles.generalText}}>Cart</Text>
+        </View>
+        :
+        <TouchableOpacity style={styles.barButton} onPress={switchCart}>
+          <ShoppingCart style={{color: '#000000', opacity: 0.5}}></ShoppingCart>
           <Text style={{
             color: '#000000',
             opacity: 0.5,
-            ...parentStyles.generalText}}>Store</Text>
-        </TouchableOpacity> )
+            ...parentStyles.generalText}}>Cart</Text>
+        </TouchableOpacity>
       }
-      <TouchableOpacity onPress={switchCart}>
-        <Text style={{
-          color: '#000000',
-          opacity: 0.5,
-          ...parentStyles.generalText}}>Cart</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity style={styles.barButton}>
         <Text style={{
           color: '#000000',
           opacity: 0.5,

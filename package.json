@@ -11,6 +11,8 @@
     "@expo-google-fonts/comfortaa": "^0.1.0",
     "@expo-google-fonts/dev": "^0.1.0",
     "@expo-google-fonts/roboto": "^0.1.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/native": "^5.6.1",
     "@react-navigation/stack": "^5.6.2",

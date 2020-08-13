@@ -25,6 +25,11 @@ export const styles = StyleSheet.create({
     backgroundColor: '#356859',
     maxWidth: '100%'
   },
+  barButton: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center'
+  },
   landingPageBackground: {
     flex: 1,
     flexDirection: 'column',

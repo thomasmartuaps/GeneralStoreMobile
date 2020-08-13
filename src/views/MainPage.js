@@ -1,21 +1,14 @@
 import React, { useState } from 'react'
 import { View, Text, Button } from 'react-native'
 import BottomBar from './components/BottomBar'
+import StorePage from './subpages/StorePage'
 import { styles } from './styles'
 
 export default function MainPage () {
   let [ count, setCount ] = useState(0)
   return (
     <View style={styles.mainBackground}>
-      <Text>number is  {count}</Text>
-      { count < 10
-        ? <Button title="Add" onPress={() => setCount(count + 1)}></Button>
-        : <Button title="Adding" color="#FD5523" onPress={() => setCount(count + 1)}></Button>
-      }
-      { count < 10 
-      ? <Text>Text berwarna</Text>
-      : <Text>Text berwarna 2</Text>
-      }
+      <StorePage></StorePage>
       <BottomBar></BottomBar>
     </View>
   )

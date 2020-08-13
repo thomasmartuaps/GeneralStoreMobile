@@ -1,11 +1,11 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import styles from './styles'
+import styles from '../styles'
 
-export default function CheckoutPage () {
+export default function StorePage () {
   return (
     <View style={styles.container}>
-      <Text>Checkout mate</Text>
+      <Text>Store mate</Text>
     </View>
   )
 }
