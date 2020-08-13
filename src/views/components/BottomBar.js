@@ -14,17 +14,17 @@ export default function BottomBar () {
   let [ profile, setProfile ] = useState(false)
 
   const switchStore = () => {
-    setStore = true
-    setCart = false
-    setProfile = false
+    setStore(true)
+    setCart(false)
+    setProfile(false)
     console.log('setStore pressed')
     console.log('store is now', store)
   }
 
   const switchCart = () => {
-    setStore = false
-    setCart = true
-    setProfile = false
+    setStore(false)
+    setCart(true)
+    setProfile(false)
     console.log('setCart pressed')
     console.log('store is now', store)
   }
@@ -36,7 +36,7 @@ export default function BottomBar () {
         ( <View>
           <Text style={{
             color: '#356859',
-            ...parentStyles.generalText}}>Store Active</Text>
+            ...parentStyles.generalText}}>Store</Text>
         </View> )
         :
         ( <TouchableOpacity onPress={switchStore}>

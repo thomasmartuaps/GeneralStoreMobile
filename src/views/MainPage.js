@@ -8,7 +8,10 @@ export default function MainPage () {
   return (
     <View style={styles.mainBackground}>
       <Text>number is  {count}</Text>
-      <Button title="Add" onPress={() => setCount(count + 1)}></Button>
+      { count < 10
+        ? <Button title="Add" onPress={() => setCount(count + 1)}></Button>
+        : <Button title="Adding" color="#FD5523" onPress={() => setCount(count + 1)}></Button>
+      }
       { count < 10 
       ? <Text>Text berwarna</Text>
       : <Text>Text berwarna 2</Text>
