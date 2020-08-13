@@ -33,18 +33,18 @@ export default function BottomBar () {
     <View style={styles.bottomBar}>
       {
         store ?
-        <View>
+        ( <View>
           <Text style={{
             color: '#356859',
             ...parentStyles.generalText}}>Store Active</Text>
-        </View>
+        </View> )
         :
-        <View onPress={switchStore}>
+        ( <TouchableOpacity onPress={switchStore}>
           <Text style={{
             color: '#000000',
             opacity: 0.5,
             ...parentStyles.generalText}}>Store</Text>
-        </View>
+        </TouchableOpacity> )
       }
       <TouchableOpacity onPress={switchCart}>
         <Text style={{
