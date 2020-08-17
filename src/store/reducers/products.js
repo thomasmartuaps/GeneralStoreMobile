@@ -10,6 +10,6 @@ export default function products (state = state, action) {
     case SET_PRODUCTS:
       return  { ...state, payload }
     default:
-      return state
+      return null
   }
 }
