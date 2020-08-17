@@ -2,10 +2,10 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import styles from '../styles'
 
-export default function ProfilePage () {
+export default function StoreTab () {
   return (
     <View style={styles.container}>
-      <Text>Profile mate</Text>
+      <Text>Store mate</Text>
     </View>
   )
 }
