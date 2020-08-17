@@ -1,4 +1,7 @@
+import { combineReducers } from 'redux'
 
-const appState = {
-  
-}
+export default combineReducers({
+  cart,
+  login,
+  products
+})
