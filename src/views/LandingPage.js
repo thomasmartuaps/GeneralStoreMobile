@@ -38,7 +38,7 @@ export default function LandingPage ({ navigation }) {
           }}>
           <Text style={{
             color: '#FD5523',
-            fontWeight: 600,
+            fontWeight: '600',
             ...parentStyles.generalText
           }}>Log In</Text>
         </TouchableOpacity>
@@ -53,7 +53,7 @@ export default function LandingPage ({ navigation }) {
           }}>
           <Text style={{
             color: '#FFFBE6',
-            fontWeight: 600,
+            fontWeight: '600',
             ...parentStyles.generalText
           }}>Register</Text>
         </TouchableOpacity>

@@ -43,9 +43,10 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
+    justifyContent: 'flex-start',
     backgroundColor: '#FFFFFF',
-    padding: 128
+    padding: 128,
+    paddingTop: 0
   },
   bottomBar: {
     position: 'fixed',
@@ -59,13 +60,28 @@ export const styles = StyleSheet.create({
     maxHeight: 56,
     width: width
   },
+  topBarText: {
+    color: '#356859',
+    fontSize: 24,
+    fontFamily: 'Comfortaa_400Regular'
+  },
   topBar: {
-    position: 'fixed',
-    top: 0,
     flex: 1,
     flexDirection: 'column',
+    backgroundColor: '#FFFBE6',
     height: 129,
     maxHeight: 129,
     width: width
+  },
+  search: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    width: 315,
+    height: 40,
+    margin: 13,
+    paddingLeft: 10,
+    borderRadius: 21
   }
 })
