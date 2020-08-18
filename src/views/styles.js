@@ -59,7 +59,13 @@ export const styles = StyleSheet.create({
     maxHeight: 56,
     width: width
   },
-  orangeButton: {
-
+  topBar: {
+    position: 'fixed',
+    top: 0,
+    flex: 1,
+    flexDirection: 'column',
+    height: 129,
+    maxHeight: 129,
+    width: width
   }
 })
